@@ -14,3 +14,19 @@ C:\Users\NADİR PAYAM\Source\Repos\SoruHavuzuOtomasyonu\SoruHavuzuOtomasyonu\obj
 C:\Users\NADİR PAYAM\Source\Repos\SoruHavuzuOtomasyonu\SoruHavuzuOtomasyonu\obj\Debug\SoruHavuzuOtomasyonu.exe
 C:\Users\NADİR PAYAM\Source\Repos\SoruHavuzuOtomasyonu\SoruHavuzuOtomasyonu\obj\Debug\SoruHavuzuOtomasyonu.pdb
 C:\Users\NADİR PAYAM\Source\Repos\SoruHavuzuOtomasyonu\SoruHavuzuOtomasyonu\obj\Debug\SoruHavuzuOtomasyonu.SoruEklemeEkrani.resources
+C:\Users\lenovo\Desktop\SoruHavuzuOtomasyonu\SoruHavuzuOtomasyonu\bin\Debug\SoruHavuzuOtomasyonu.exe.config
+C:\Users\lenovo\Desktop\SoruHavuzuOtomasyonu\SoruHavuzuOtomasyonu\bin\Debug\SoruHavuzuOtomasyonu.exe
+C:\Users\lenovo\Desktop\SoruHavuzuOtomasyonu\SoruHavuzuOtomasyonu\bin\Debug\SoruHavuzuOtomasyonu.pdb
+C:\Users\lenovo\Desktop\SoruHavuzuOtomasyonu\SoruHavuzuOtomasyonu\obj\Debug\SoruHavuzuOtomasyonu.csproj.AssemblyReference.cache
+C:\Users\lenovo\Desktop\SoruHavuzuOtomasyonu\SoruHavuzuOtomasyonu\obj\Debug\SoruHavuzuOtomasyonu.AdminGiris.resources
+C:\Users\lenovo\Desktop\SoruHavuzuOtomasyonu\SoruHavuzuOtomasyonu\obj\Debug\SoruHavuzuOtomasyonu.Anasayfa.resources
+C:\Users\lenovo\Desktop\SoruHavuzuOtomasyonu\SoruHavuzuOtomasyonu\obj\Debug\SoruHavuzuOtomasyonu.OgrenciGiris.resources
+C:\Users\lenovo\Desktop\SoruHavuzuOtomasyonu\SoruHavuzuOtomasyonu\obj\Debug\SoruHavuzuOtomasyonu.Properties.Resources.resources
+C:\Users\lenovo\Desktop\SoruHavuzuOtomasyonu\SoruHavuzuOtomasyonu\obj\Debug\SoruHavuzuOtomasyonu.SifremiUnuttum.resources
+C:\Users\lenovo\Desktop\SoruHavuzuOtomasyonu\SoruHavuzuOtomasyonu\obj\Debug\SoruHavuzuOtomasyonu.SinavSorumlusuGiris.resources
+C:\Users\lenovo\Desktop\SoruHavuzuOtomasyonu\SoruHavuzuOtomasyonu\obj\Debug\SoruHavuzuOtomasyonu.SoruEklemeEkrani.resources
+C:\Users\lenovo\Desktop\SoruHavuzuOtomasyonu\SoruHavuzuOtomasyonu\obj\Debug\SoruHavuzuOtomasyonu.UyeOl.resources
+C:\Users\lenovo\Desktop\SoruHavuzuOtomasyonu\SoruHavuzuOtomasyonu\obj\Debug\SoruHavuzuOtomasyonu.csproj.GenerateResource.cache
+C:\Users\lenovo\Desktop\SoruHavuzuOtomasyonu\SoruHavuzuOtomasyonu\obj\Debug\SoruHavuzuOtomasyonu.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\Desktop\SoruHavuzuOtomasyonu\SoruHavuzuOtomasyonu\obj\Debug\SoruHavuzuOtomasyonu.exe
+C:\Users\lenovo\Desktop\SoruHavuzuOtomasyonu\SoruHavuzuOtomasyonu\obj\Debug\SoruHavuzuOtomasyonu.pdb
