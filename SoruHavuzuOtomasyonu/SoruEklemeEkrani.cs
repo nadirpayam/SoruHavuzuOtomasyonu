@@ -38,7 +38,7 @@ namespace SoruHavuzuOtomasyonu
 
 
 
-                string sorgu = "insert into Sorular(Soru,SinifDuzeyi,UniteNo,KonuNo,SoruNo,KodNo,DersinAdı,UniteAdı,KonuAdı,Cevap)values(@soru,@duzey,@uniteno,@konuno,@soruno,@kod,@ders,@unitead,@konuad,@cevap)";
+                string sorgu = "insert into Sorular(Soru,SinifDuzeyi,UniteNo,KonuNo,SoruNo,KodNo,DersinAdi,UniteAdi,KonuAdi,Cevap)values(@soru,@duzey,@uniteno,@konuno,@soruno,@kod,@ders,@unitead,@konuad,@cevap)";
                 SqlCommand komut = new SqlCommand(sorgu, sql.baglan());
                 komut.Parameters.Add("@soru", SqlDbType.Image, resim.Length).Value = resim;
 
@@ -53,6 +53,18 @@ namespace SoruHavuzuOtomasyonu
                 komut.Parameters.AddWithValue("@cevap", textBoxCevap.Text);
                 komut.ExecuteNonQuery();
                 MessageBox.Show("Soru başarıyla eklendi.");
+
+              //  textBoxSinifDuzeyi.Clear();
+             //   textBoxUniteNo.Clear();
+              //  textBoxKonuNo.Clear();
+                textBoxSoruNo.Clear();
+               // textBoxKodNo.Clear();
+               // textBoxDersinAdi.Clear();
+              //  textBoxUniteAd.Clear();
+              //  textBoxKonuAd.Clear();
+                textBoxCevap.Clear();
+
+
             }
         }
 
@@ -70,5 +82,7 @@ namespace SoruHavuzuOtomasyonu
         {
             Application.Exit();
         }
+
+      
     }
 }

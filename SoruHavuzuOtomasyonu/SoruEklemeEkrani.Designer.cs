@@ -43,7 +43,7 @@ namespace SoruHavuzuOtomasyonu
             this.textBoxSinifDuzeyi = new System.Windows.Forms.TextBox();
             this.labelCevap = new System.Windows.Forms.Label();
             this.labelKonuAdı = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.labelUniteAd = new System.Windows.Forms.Label();
             this.labelDersinAdı = new System.Windows.Forms.Label();
             this.labelKodNo = new System.Windows.Forms.Label();
             this.labelSoruNo = new System.Windows.Forms.Label();
@@ -60,9 +60,9 @@ namespace SoruHavuzuOtomasyonu
             // 
             this.buttonEkle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonEkle.BackgroundImage")));
             this.buttonEkle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonEkle.Location = new System.Drawing.Point(846, 271);
+            this.buttonEkle.Location = new System.Drawing.Point(963, 366);
             this.buttonEkle.Name = "buttonEkle";
-            this.buttonEkle.Size = new System.Drawing.Size(197, 85);
+            this.buttonEkle.Size = new System.Drawing.Size(172, 72);
             this.buttonEkle.TabIndex = 83;
             this.buttonEkle.UseVisualStyleBackColor = true;
             this.buttonEkle.Click += new System.EventHandler(this.buttonEkle_Click);
@@ -71,93 +71,93 @@ namespace SoruHavuzuOtomasyonu
             // 
             this.buttonResimEkle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonResimEkle.BackgroundImage")));
             this.buttonResimEkle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonResimEkle.Location = new System.Drawing.Point(846, 150);
+            this.buttonResimEkle.Location = new System.Drawing.Point(110, 366);
             this.buttonResimEkle.Name = "buttonResimEkle";
-            this.buttonResimEkle.Size = new System.Drawing.Size(197, 85);
+            this.buttonResimEkle.Size = new System.Drawing.Size(172, 72);
             this.buttonResimEkle.TabIndex = 82;
             this.buttonResimEkle.UseVisualStyleBackColor = true;
             this.buttonResimEkle.Click += new System.EventHandler(this.buttonResimEkle_Click);
             // 
             // textBoxCevap
             // 
-            this.textBoxCevap.Location = new System.Drawing.Point(775, 652);
+            this.textBoxCevap.Location = new System.Drawing.Point(289, 466);
             this.textBoxCevap.Multiline = true;
             this.textBoxCevap.Name = "textBoxCevap";
-            this.textBoxCevap.Size = new System.Drawing.Size(197, 39);
+            this.textBoxCevap.Size = new System.Drawing.Size(111, 30);
             this.textBoxCevap.TabIndex = 81;
             // 
             // textBoxKonuAd
             // 
-            this.textBoxKonuAd.Location = new System.Drawing.Point(775, 592);
+            this.textBoxKonuAd.Location = new System.Drawing.Point(909, 586);
             this.textBoxKonuAd.Multiline = true;
             this.textBoxKonuAd.Name = "textBoxKonuAd";
-            this.textBoxKonuAd.Size = new System.Drawing.Size(197, 39);
+            this.textBoxKonuAd.Size = new System.Drawing.Size(257, 39);
             this.textBoxKonuAd.TabIndex = 80;
             // 
             // textBoxUniteAd
             // 
-            this.textBoxUniteAd.Location = new System.Drawing.Point(775, 530);
+            this.textBoxUniteAd.Location = new System.Drawing.Point(912, 526);
             this.textBoxUniteAd.Multiline = true;
             this.textBoxUniteAd.Name = "textBoxUniteAd";
-            this.textBoxUniteAd.Size = new System.Drawing.Size(197, 39);
+            this.textBoxUniteAd.Size = new System.Drawing.Size(254, 39);
             this.textBoxUniteAd.TabIndex = 79;
             // 
             // textBoxDersinAdi
             // 
-            this.textBoxDersinAdi.Location = new System.Drawing.Point(775, 456);
+            this.textBoxDersinAdi.Location = new System.Drawing.Point(912, 465);
             this.textBoxDersinAdi.Multiline = true;
             this.textBoxDersinAdi.Name = "textBoxDersinAdi";
-            this.textBoxDersinAdi.Size = new System.Drawing.Size(197, 39);
+            this.textBoxDersinAdi.Size = new System.Drawing.Size(254, 39);
             this.textBoxDersinAdi.TabIndex = 78;
             // 
             // textBoxKodNo
             // 
-            this.textBoxKodNo.Location = new System.Drawing.Point(290, 649);
+            this.textBoxKodNo.Location = new System.Drawing.Point(609, 590);
             this.textBoxKodNo.Multiline = true;
             this.textBoxKodNo.Name = "textBoxKodNo";
-            this.textBoxKodNo.Size = new System.Drawing.Size(197, 39);
+            this.textBoxKodNo.Size = new System.Drawing.Size(111, 26);
             this.textBoxKodNo.TabIndex = 77;
             // 
             // textBoxSoruNo
             // 
-            this.textBoxSoruNo.Location = new System.Drawing.Point(290, 584);
+            this.textBoxSoruNo.Location = new System.Drawing.Point(610, 531);
             this.textBoxSoruNo.Multiline = true;
             this.textBoxSoruNo.Name = "textBoxSoruNo";
-            this.textBoxSoruNo.Size = new System.Drawing.Size(197, 39);
+            this.textBoxSoruNo.Size = new System.Drawing.Size(111, 26);
             this.textBoxSoruNo.TabIndex = 76;
             // 
             // textBoxKonuNo
             // 
-            this.textBoxKonuNo.Location = new System.Drawing.Point(290, 522);
+            this.textBoxKonuNo.Location = new System.Drawing.Point(609, 478);
             this.textBoxKonuNo.Multiline = true;
             this.textBoxKonuNo.Name = "textBoxKonuNo";
-            this.textBoxKonuNo.Size = new System.Drawing.Size(197, 39);
+            this.textBoxKonuNo.Size = new System.Drawing.Size(111, 26);
             this.textBoxKonuNo.TabIndex = 75;
             // 
             // textBoxUniteNo
             // 
-            this.textBoxUniteNo.Location = new System.Drawing.Point(290, 456);
+            this.textBoxUniteNo.Location = new System.Drawing.Point(289, 587);
             this.textBoxUniteNo.Multiline = true;
             this.textBoxUniteNo.Name = "textBoxUniteNo";
-            this.textBoxUniteNo.Size = new System.Drawing.Size(197, 39);
+            this.textBoxUniteNo.Size = new System.Drawing.Size(111, 26);
             this.textBoxUniteNo.TabIndex = 74;
             // 
             // textBoxSinifDuzeyi
             // 
-            this.textBoxSinifDuzeyi.Location = new System.Drawing.Point(290, 399);
+            this.textBoxSinifDuzeyi.Location = new System.Drawing.Point(289, 531);
             this.textBoxSinifDuzeyi.Multiline = true;
             this.textBoxSinifDuzeyi.Name = "textBoxSinifDuzeyi";
-            this.textBoxSinifDuzeyi.Size = new System.Drawing.Size(197, 39);
+            this.textBoxSinifDuzeyi.Size = new System.Drawing.Size(111, 26);
             this.textBoxSinifDuzeyi.TabIndex = 73;
             // 
             // labelCevap
             // 
             this.labelCevap.BackColor = System.Drawing.Color.Transparent;
-            this.labelCevap.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelCevap.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelCevap.ForeColor = System.Drawing.Color.DarkBlue;
-            this.labelCevap.Location = new System.Drawing.Point(557, 644);
+            this.labelCevap.Location = new System.Drawing.Point(128, 452);
             this.labelCevap.Name = "labelCevap";
-            this.labelCevap.Size = new System.Drawing.Size(176, 52);
+            this.labelCevap.Size = new System.Drawing.Size(154, 52);
             this.labelCevap.TabIndex = 72;
             this.labelCevap.Text = "Cevap:";
             this.labelCevap.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -165,35 +165,35 @@ namespace SoruHavuzuOtomasyonu
             // labelKonuAdı
             // 
             this.labelKonuAdı.BackColor = System.Drawing.Color.Transparent;
-            this.labelKonuAdı.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelKonuAdı.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelKonuAdı.ForeColor = System.Drawing.Color.DarkBlue;
-            this.labelKonuAdı.Location = new System.Drawing.Point(557, 579);
+            this.labelKonuAdı.Location = new System.Drawing.Point(727, 577);
             this.labelKonuAdı.Name = "labelKonuAdı";
             this.labelKonuAdı.Size = new System.Drawing.Size(176, 52);
             this.labelKonuAdı.TabIndex = 71;
             this.labelKonuAdı.Text = "Konu Adı:";
             this.labelKonuAdı.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label3
+            // labelUniteAd
             // 
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label3.Location = new System.Drawing.Point(557, 517);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(176, 52);
-            this.label3.TabIndex = 70;
-            this.label3.Text = "Ünite Adı:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelUniteAd.BackColor = System.Drawing.Color.Transparent;
+            this.labelUniteAd.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelUniteAd.ForeColor = System.Drawing.Color.DarkBlue;
+            this.labelUniteAd.Location = new System.Drawing.Point(727, 516);
+            this.labelUniteAd.Name = "labelUniteAd";
+            this.labelUniteAd.Size = new System.Drawing.Size(176, 52);
+            this.labelUniteAd.TabIndex = 70;
+            this.labelUniteAd.Text = "Ünite Adı:";
+            this.labelUniteAd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // labelDersinAdı
             // 
             this.labelDersinAdı.BackColor = System.Drawing.Color.Transparent;
-            this.labelDersinAdı.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelDersinAdı.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelDersinAdı.ForeColor = System.Drawing.Color.DarkBlue;
-            this.labelDersinAdı.Location = new System.Drawing.Point(527, 453);
+            this.labelDersinAdı.Location = new System.Drawing.Point(711, 459);
             this.labelDersinAdı.Name = "labelDersinAdı";
-            this.labelDersinAdı.Size = new System.Drawing.Size(206, 42);
+            this.labelDersinAdı.Size = new System.Drawing.Size(192, 45);
             this.labelDersinAdı.TabIndex = 69;
             this.labelDersinAdı.Text = "Dersin Adı:";
             this.labelDersinAdı.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -201,9 +201,9 @@ namespace SoruHavuzuOtomasyonu
             // labelKodNo
             // 
             this.labelKodNo.BackColor = System.Drawing.Color.Transparent;
-            this.labelKodNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelKodNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelKodNo.ForeColor = System.Drawing.Color.DarkBlue;
-            this.labelKodNo.Location = new System.Drawing.Point(61, 644);
+            this.labelKodNo.Location = new System.Drawing.Point(409, 580);
             this.labelKodNo.Name = "labelKodNo";
             this.labelKodNo.Size = new System.Drawing.Size(176, 42);
             this.labelKodNo.TabIndex = 68;
@@ -213,11 +213,11 @@ namespace SoruHavuzuOtomasyonu
             // labelSoruNo
             // 
             this.labelSoruNo.BackColor = System.Drawing.Color.Transparent;
-            this.labelSoruNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelSoruNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelSoruNo.ForeColor = System.Drawing.Color.DarkBlue;
-            this.labelSoruNo.Location = new System.Drawing.Point(61, 584);
+            this.labelSoruNo.Location = new System.Drawing.Point(416, 523);
             this.labelSoruNo.Name = "labelSoruNo";
-            this.labelSoruNo.Size = new System.Drawing.Size(176, 42);
+            this.labelSoruNo.Size = new System.Drawing.Size(170, 39);
             this.labelSoruNo.TabIndex = 67;
             this.labelSoruNo.Text = "Soru No:";
             this.labelSoruNo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -225,11 +225,11 @@ namespace SoruHavuzuOtomasyonu
             // labelKonuNo
             // 
             this.labelKonuNo.BackColor = System.Drawing.Color.Transparent;
-            this.labelKonuNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelKonuNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelKonuNo.ForeColor = System.Drawing.Color.DarkBlue;
-            this.labelKonuNo.Location = new System.Drawing.Point(61, 522);
+            this.labelKonuNo.Location = new System.Drawing.Point(406, 471);
             this.labelKonuNo.Name = "labelKonuNo";
-            this.labelKonuNo.Size = new System.Drawing.Size(176, 42);
+            this.labelKonuNo.Size = new System.Drawing.Size(180, 39);
             this.labelKonuNo.TabIndex = 66;
             this.labelKonuNo.Text = "Konu No:";
             this.labelKonuNo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -237,11 +237,11 @@ namespace SoruHavuzuOtomasyonu
             // labelUniteNo
             // 
             this.labelUniteNo.BackColor = System.Drawing.Color.Transparent;
-            this.labelUniteNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelUniteNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelUniteNo.ForeColor = System.Drawing.Color.DarkBlue;
-            this.labelUniteNo.Location = new System.Drawing.Point(65, 456);
+            this.labelUniteNo.Location = new System.Drawing.Point(110, 583);
             this.labelUniteNo.Name = "labelUniteNo";
-            this.labelUniteNo.Size = new System.Drawing.Size(172, 42);
+            this.labelUniteNo.Size = new System.Drawing.Size(171, 39);
             this.labelUniteNo.TabIndex = 65;
             this.labelUniteNo.Text = "Ünite No:";
             this.labelUniteNo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -249,20 +249,20 @@ namespace SoruHavuzuOtomasyonu
             // labelSinifDuzeyi
             // 
             this.labelSinifDuzeyi.BackColor = System.Drawing.Color.Transparent;
-            this.labelSinifDuzeyi.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelSinifDuzeyi.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelSinifDuzeyi.ForeColor = System.Drawing.Color.DarkBlue;
-            this.labelSinifDuzeyi.Location = new System.Drawing.Point(-8, 396);
+            this.labelSinifDuzeyi.Location = new System.Drawing.Point(63, 520);
             this.labelSinifDuzeyi.Name = "labelSinifDuzeyi";
-            this.labelSinifDuzeyi.Size = new System.Drawing.Size(245, 42);
+            this.labelSinifDuzeyi.Size = new System.Drawing.Size(219, 45);
             this.labelSinifDuzeyi.TabIndex = 64;
             this.labelSinifDuzeyi.Text = "Sınıf Düzeyi:";
             this.labelSinifDuzeyi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // pictureBoxsoru
             // 
-            this.pictureBoxsoru.Location = new System.Drawing.Point(50, 25);
+            this.pictureBoxsoru.Location = new System.Drawing.Point(289, 68);
             this.pictureBoxsoru.Name = "pictureBoxsoru";
-            this.pictureBoxsoru.Size = new System.Drawing.Size(741, 368);
+            this.pictureBoxsoru.Size = new System.Drawing.Size(668, 370);
             this.pictureBoxsoru.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxsoru.TabIndex = 63;
             this.pictureBoxsoru.TabStop = false;
@@ -276,9 +276,9 @@ namespace SoruHavuzuOtomasyonu
             this.buttonCikis.BackColor = System.Drawing.Color.Transparent;
             this.buttonCikis.FlatAppearance.BorderSize = 0;
             this.buttonCikis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCikis.Font = new System.Drawing.Font("Constantia", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.buttonCikis.Font = new System.Drawing.Font("Constantia", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.buttonCikis.ForeColor = System.Drawing.Color.Maroon;
-            this.buttonCikis.Location = new System.Drawing.Point(1013, 0);
+            this.buttonCikis.Location = new System.Drawing.Point(1097, 80);
             this.buttonCikis.Name = "buttonCikis";
             this.buttonCikis.Size = new System.Drawing.Size(85, 76);
             this.buttonCikis.TabIndex = 84;
@@ -292,7 +292,7 @@ namespace SoruHavuzuOtomasyonu
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1131, 752);
+            this.ClientSize = new System.Drawing.Size(1232, 752);
             this.Controls.Add(this.buttonCikis);
             this.Controls.Add(this.buttonEkle);
             this.Controls.Add(this.buttonResimEkle);
@@ -307,7 +307,7 @@ namespace SoruHavuzuOtomasyonu
             this.Controls.Add(this.textBoxSinifDuzeyi);
             this.Controls.Add(this.labelCevap);
             this.Controls.Add(this.labelKonuAdı);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.labelUniteAd);
             this.Controls.Add(this.labelDersinAdı);
             this.Controls.Add(this.labelKodNo);
             this.Controls.Add(this.labelSoruNo);
@@ -315,6 +315,7 @@ namespace SoruHavuzuOtomasyonu
             this.Controls.Add(this.labelUniteNo);
             this.Controls.Add(this.labelSinifDuzeyi);
             this.Controls.Add(this.pictureBoxsoru);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SoruEklemeEkrani";
             this.Text = "SoruEklemeEkrani";
@@ -339,7 +340,7 @@ namespace SoruHavuzuOtomasyonu
         private System.Windows.Forms.TextBox textBoxSinifDuzeyi;
         private System.Windows.Forms.Label labelCevap;
         private System.Windows.Forms.Label labelKonuAdı;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelUniteAd;
         private System.Windows.Forms.Label labelDersinAdı;
         private System.Windows.Forms.Label labelKodNo;
         private System.Windows.Forms.Label labelSoruNo;
