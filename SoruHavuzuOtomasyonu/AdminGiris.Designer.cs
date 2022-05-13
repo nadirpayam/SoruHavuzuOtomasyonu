@@ -180,7 +180,7 @@ namespace SoruHavuzuOtomasyonu
             this.Controls.Add(this.labelAdminGiris);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AdminGiris";
-            this.Text = "AdminGiris";
+            this.Text = "cd ";
             this.ResumeLayout(false);
             this.PerformLayout();
 
