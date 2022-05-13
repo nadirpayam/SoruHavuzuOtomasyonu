@@ -42,7 +42,9 @@ namespace SoruHavuzuOtomasyonu
                     SqlDataReader dr = komut.ExecuteReader();
                     if (dr.Read())
                     {
-                        MessageBox.Show("Aferin");
+                    AdminKontrol kontrol = new AdminKontrol();
+                    kontrol.Show();
+                    this.Hide();
                     }
                     else
                     {
