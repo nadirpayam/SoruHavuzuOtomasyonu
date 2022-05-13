@@ -65,7 +65,9 @@ namespace SoruHavuzuOtomasyonu
                 SqlDataReader dr = komut.ExecuteReader();
                 if (dr.Read())
                 {
-                    MessageBox.Show("Aferin");
+                    OgrenciAnaSayfa anasayfa = new OgrenciAnaSayfa();
+                    anasayfa.Show();
+                    this.Hide();
                 }
                 else
                 {
