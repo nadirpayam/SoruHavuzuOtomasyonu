@@ -65,6 +65,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="OgrenciAnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciAnaSayfa.Designer.cs">
+      <DependentUpon>OgrenciAnaSayfa.cs</DependentUpon>
+    </Compile>
     <Compile Include="OgrenciGiris.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuizEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuizEkrani.Designer.cs">
+      <DependentUpon>QuizEkrani.cs</DependentUpon>
+    </Compile>
     <Compile Include="SifremiUnuttum.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +118,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciAnaSayfa.resx">
+      <DependentUpon>OgrenciAnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="OgrenciGiris.resx">
       <DependentUpon>OgrenciGiris.cs</DependentUpon>
     </EmbeddedResource>
@@ -118,6 +133,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="QuizEkrani.resx">
+      <DependentUpon>QuizEkrani.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SifremiUnuttum.resx">
       <DependentUpon>SifremiUnuttum.cs</DependentUpon>
     </EmbeddedResource>
