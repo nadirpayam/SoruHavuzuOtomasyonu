@@ -112,7 +112,7 @@ namespace SoruHavuzuOtomasyonu
             // 
             // textBoxKodNo
             // 
-            this.textBoxKodNo.Location = new System.Drawing.Point(609, 590);
+            this.textBoxKodNo.Location = new System.Drawing.Point(609, 587);
             this.textBoxKodNo.Multiline = true;
             this.textBoxKodNo.Name = "textBoxKodNo";
             this.textBoxKodNo.Size = new System.Drawing.Size(111, 26);
@@ -120,7 +120,7 @@ namespace SoruHavuzuOtomasyonu
             // 
             // textBoxSoruNo
             // 
-            this.textBoxSoruNo.Location = new System.Drawing.Point(610, 531);
+            this.textBoxSoruNo.Location = new System.Drawing.Point(609, 531);
             this.textBoxSoruNo.Multiline = true;
             this.textBoxSoruNo.Name = "textBoxSoruNo";
             this.textBoxSoruNo.Size = new System.Drawing.Size(111, 26);
@@ -128,7 +128,7 @@ namespace SoruHavuzuOtomasyonu
             // 
             // textBoxKonuNo
             // 
-            this.textBoxKonuNo.Location = new System.Drawing.Point(609, 478);
+            this.textBoxKonuNo.Location = new System.Drawing.Point(609, 473);
             this.textBoxKonuNo.Multiline = true;
             this.textBoxKonuNo.Name = "textBoxKonuNo";
             this.textBoxKonuNo.Size = new System.Drawing.Size(111, 26);
@@ -227,7 +227,7 @@ namespace SoruHavuzuOtomasyonu
             this.labelKonuNo.BackColor = System.Drawing.Color.Transparent;
             this.labelKonuNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelKonuNo.ForeColor = System.Drawing.Color.DarkBlue;
-            this.labelKonuNo.Location = new System.Drawing.Point(406, 471);
+            this.labelKonuNo.Location = new System.Drawing.Point(409, 464);
             this.labelKonuNo.Name = "labelKonuNo";
             this.labelKonuNo.Size = new System.Drawing.Size(180, 39);
             this.labelKonuNo.TabIndex = 66;
