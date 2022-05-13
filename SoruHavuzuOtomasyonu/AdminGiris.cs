@@ -19,7 +19,7 @@ namespace SoruHavuzuOtomasyonu
         {
             InitializeComponent();
         }
-        SqlConnection baglanti = new SqlConnection(@"Data Source=LAPTOP-LNMPQIK9;Initial Catalog=sinavProjesi;Integrated Security=True");
+        SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-BUB2ROC;Initial Catalog=sinavProjesi;Integrated Security=True");
         private void buttonAnasayfa_Click(object sender, EventArgs e)
         {
             Anasayfa anasayfa = new Anasayfa();
