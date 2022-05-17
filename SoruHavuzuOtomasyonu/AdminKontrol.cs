@@ -19,11 +19,13 @@ namespace SoruHavuzuOtomasyonu
             InitializeComponent();
         }
 
+        // burada uygulamadan çıkışı sağlıyoruz isteğe bağlı
         private void buttonCikis_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
+        // soruları veritabanından getiren method
         void SorulariGetir()
         {
             DataTable tbl = new DataTable();
@@ -31,20 +33,27 @@ namespace SoruHavuzuOtomasyonu
             adtr.Fill(tbl);
             dataGridViewSorular.DataSource = tbl;
         }
+
+        // form açılır açılmaz sorular yükleniyor datagridview'e bu şekilde
         private void AdminKontrol_Load(object sender, EventArgs e)
         {
 
             SorulariGetir();
         }
 
+        // admin isterse anasayfaya da dönebilir
         private void buttonAnasayfa_Click(object sender, EventArgs e)
         {
             Anasayfa anasayfa = new Anasayfa();
             anasayfa.Show();
             this.Hide();
         }
+
+        // veritabanı bağlantısı için bir nesne oluşturduk 
         Classlar.SqlBaglantisi sql = new Classlar.SqlBaglantisi();
 
+
+        //burada eğer admin soruyu onaylamazsa soru kayıtlar arasından kaldırılıyor
         private void buttonOnaylama_Click(object sender, EventArgs e)
         {
             string sorgu = "DELETE FROM Sorular WHERE SoruID=@id";
@@ -56,11 +65,9 @@ namespace SoruHavuzuOtomasyonu
             SorulariGetir();
         }
 
-        private void dataGridViewSorular_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
+      
 
-        }
-
+        // burada sorular veritabanından datagridview'e aktarılıyor
         private void dataGridViewSorular_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -82,21 +89,19 @@ namespace SoruHavuzuOtomasyonu
             }
         }
 
-     
+      // admin soruyu onaylarsa veritabanına sorunun onay durumu 'Onaylandı' olarak değişiyor
         private void buttonOnayla_Click(object sender, EventArgs e)
         {
 
-            string sorgu = "UPDATE Sorular set OnayDurumu=@onay WHERE SoruID=@id";
+            string sorgu = "UPDATE Sorular set OnayDurumu=@onay WHERE SoruID=@id"; // sql sorgusuyla OnayDurumu'nu değiştiriyoruz
             SqlCommand komut = new SqlCommand(sorgu, sql.baglan());
             komut.Parameters.AddWithValue("@id", Convert.ToInt32(dataGridViewSorular.CurrentRow.Cells[0].Value));
             komut.Parameters.AddWithValue("@onay", "Onaylandı");
             
             komut.ExecuteNonQuery();
-            
-
-            MessageBox.Show("Soru onaylandı");
+           MessageBox.Show("Soru onaylandı");
              
-              SorulariGetir();
+              SorulariGetir(); // soru onaylandıktan sonra sorulaın bilgileri yenileniyor direkt
 
 
         }

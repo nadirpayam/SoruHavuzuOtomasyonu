@@ -43,6 +43,21 @@ namespace SoruHavuzuOtomasyonu
             linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
+            // linkLabel1
+            // 
+            linkLabel1.BackColor = System.Drawing.Color.Transparent;
+            linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            linkLabel1.ForeColor = System.Drawing.Color.DarkBlue;
+            linkLabel1.LinkColor = System.Drawing.Color.White;
+            linkLabel1.Location = new System.Drawing.Point(379, 416);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new System.Drawing.Size(193, 23);
+            linkLabel1.TabIndex = 67;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "Şifremi Unuttum";
+            linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // buttonCikis
             // 
             this.buttonCikis.BackColor = System.Drawing.Color.Transparent;
@@ -57,20 +72,6 @@ namespace SoruHavuzuOtomasyonu
             this.buttonCikis.Text = "X";
             this.buttonCikis.UseVisualStyleBackColor = false;
             this.buttonCikis.Click += new System.EventHandler(this.buttonCikis_Click);
-            // 
-            // linkLabel1
-            // 
-            linkLabel1.BackColor = System.Drawing.Color.Transparent;
-            linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            linkLabel1.ForeColor = System.Drawing.Color.DarkBlue;
-            linkLabel1.LinkColor = System.Drawing.Color.White;
-            linkLabel1.Location = new System.Drawing.Point(379, 416);
-            linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new System.Drawing.Size(193, 23);
-            linkLabel1.TabIndex = 67;
-            linkLabel1.TabStop = true;
-            linkLabel1.Text = "Şifremi Unuttum";
-            linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // buttonGirisYap
             // 

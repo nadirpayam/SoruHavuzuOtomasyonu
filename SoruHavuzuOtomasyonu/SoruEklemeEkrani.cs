@@ -83,6 +83,12 @@ namespace SoruHavuzuOtomasyonu
             Application.Exit();
         }
 
-      
+        //burada sinav sorumlusu anasayfaya dönmek isterse butona bastığında dönmesini sağlıyoruz
+        private void buttonAnasayfa_Click(object sender, EventArgs e)
+        {
+            Anasayfa anasayfa = new Anasayfa();
+            anasayfa.Show();
+            this.Hide();
+        }
     }
 }

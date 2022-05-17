@@ -19,7 +19,10 @@ namespace SoruHavuzuOtomasyonu
         {
             InitializeComponent();
         }
+        //burada veritabanı bağlantısı için Classlar klasöründen SqlBaglantis sınıfının nesnesini oluşturuyoruz
         SqlConnection baglanti = new SqlConnection(@"Data Source=LAPTOP-LNMPQIK9;Initial Catalog=sinavProjesi;Integrated Security=True");
+     
+        //burada isteğe bağlı olarak anasayfaya dönüşü sağlıyoruz
         private void buttonAnasayfa_Click(object sender, EventArgs e)
         {
             Anasayfa anasayfa = new Anasayfa();
@@ -31,24 +34,25 @@ namespace SoruHavuzuOtomasyonu
         {
     
 
-         if (textBoxKulAd.Text == "" || textBoxSifre.Text == "")
+         if (textBoxKulAd.Text == "" || textBoxSifre.Text == "") // burada adminin bilgilerini eksik girip girmediği kontrol ediyoruz, eksik girdiyse uyarı veriyoruz
                 {
                     MessageBox.Show("Kullanıcı adı veya şifre boş geçilmez.");
                 }
                 else
                 {
+                 
                     SqlCommand komut = new SqlCommand("select * from Admin where KulAd='" + textBoxKulAd.Text + "'and Sifre = '" + textBoxSifre.Text + "'", baglanti);
                     baglanti.Open();
                     SqlDataReader dr = komut.ExecuteReader();
                     if (dr.Read())
                     {
-                    AdminKontrol kontrol = new AdminKontrol();
+                    AdminKontrol kontrol = new AdminKontrol(); // admin bilgilerini doğru girdiyse admin kontrol sayfasına yönlendiriliyor
                     kontrol.Show();
                     this.Hide();
                     }
                     else
                     {
-                        MessageBox.Show("Kullanıcı  adı veya şifresi yanlış");
+                        MessageBox.Show("Kullanıcı  adı veya şifresi yanlış"); // admin şifresini yanlış girdiyse uyarı alıyor
                         textBoxKulAd.Clear();
                         textBoxSifre.Clear();
 
@@ -59,6 +63,7 @@ namespace SoruHavuzuOtomasyonu
 
             }
 
+        // burada adminin şifresini girerken şifresinin görünürlüğünü kontrol etmesini sağlıyoruz
         private void checkBoxGoster_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBoxGoster.CheckState == CheckState.Checked)
@@ -72,10 +77,17 @@ namespace SoruHavuzuOtomasyonu
                 checkBoxGoster.Text = "Göster";
             }
         }
-
+        //burada adminin uygulamadan çıkmasını sağlıyoruz
         private void buttonCikis_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            SifremiUnuttum sifre = new SifremiUnuttum();
+            sifre.Show();
+            this.Hide();
         }
     }
    

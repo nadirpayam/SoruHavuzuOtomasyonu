@@ -53,6 +53,7 @@ namespace SoruHavuzuOtomasyonu
             this.pictureBoxsoru = new System.Windows.Forms.PictureBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.buttonCikis = new System.Windows.Forms.Button();
+            this.buttonAnasayfa = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxsoru)).BeginInit();
             this.SuspendLayout();
             // 
@@ -286,6 +287,17 @@ namespace SoruHavuzuOtomasyonu
             this.buttonCikis.UseVisualStyleBackColor = false;
             this.buttonCikis.Click += new System.EventHandler(this.buttonCikis_Click);
             // 
+            // buttonAnasayfa
+            // 
+            this.buttonAnasayfa.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonAnasayfa.BackgroundImage")));
+            this.buttonAnasayfa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonAnasayfa.Location = new System.Drawing.Point(69, 80);
+            this.buttonAnasayfa.Name = "buttonAnasayfa";
+            this.buttonAnasayfa.Size = new System.Drawing.Size(90, 67);
+            this.buttonAnasayfa.TabIndex = 85;
+            this.buttonAnasayfa.UseVisualStyleBackColor = true;
+            this.buttonAnasayfa.Click += new System.EventHandler(this.buttonAnasayfa_Click);
+            // 
             // SoruEklemeEkrani
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -293,6 +305,7 @@ namespace SoruHavuzuOtomasyonu
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1232, 752);
+            this.Controls.Add(this.buttonAnasayfa);
             this.Controls.Add(this.buttonCikis);
             this.Controls.Add(this.buttonEkle);
             this.Controls.Add(this.buttonResimEkle);
@@ -350,5 +363,6 @@ namespace SoruHavuzuOtomasyonu
         private System.Windows.Forms.PictureBox pictureBoxsoru;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Button buttonCikis;
+        private System.Windows.Forms.Button buttonAnasayfa;
     }
 }
