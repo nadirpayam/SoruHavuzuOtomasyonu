@@ -29,14 +29,13 @@ namespace SoruHavuzuOtomasyonu
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UyeOl));
-            this.labelTip = new System.Windows.Forms.Label();
             this.labelAd = new System.Windows.Forms.Label();
             this.labelSoyad = new System.Windows.Forms.Label();
             this.labelKulAd = new System.Windows.Forms.Label();
             this.labelMail = new System.Windows.Forms.Label();
             this.labelSifre = new System.Windows.Forms.Label();
-            this.comboBoxTip = new System.Windows.Forms.ComboBox();
             this.textBoxAd = new System.Windows.Forms.TextBox();
             this.textBoxSoyad = new System.Windows.Forms.TextBox();
             this.textBoxKulAd = new System.Windows.Forms.TextBox();
@@ -48,26 +47,16 @@ namespace SoruHavuzuOtomasyonu
             this.buttonCikis = new System.Windows.Forms.Button();
             this.checkBoxGoster = new System.Windows.Forms.CheckBox();
             this.labelUyeOl = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // labelTip
-            // 
-            this.labelTip.BackColor = System.Drawing.Color.Transparent;
-            this.labelTip.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelTip.ForeColor = System.Drawing.Color.White;
-            this.labelTip.Location = new System.Drawing.Point(59, 122);
-            this.labelTip.Name = "labelTip";
-            this.labelTip.Size = new System.Drawing.Size(252, 42);
-            this.labelTip.TabIndex = 0;
-            this.labelTip.Text = "Kullanıcı Tipi:";
-            this.labelTip.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // labelAd
             // 
             this.labelAd.BackColor = System.Drawing.Color.Transparent;
             this.labelAd.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelAd.ForeColor = System.Drawing.Color.White;
-            this.labelAd.Location = new System.Drawing.Point(59, 187);
+            this.labelAd.Location = new System.Drawing.Point(46, 137);
             this.labelAd.Name = "labelAd";
             this.labelAd.Size = new System.Drawing.Size(252, 42);
             this.labelAd.TabIndex = 1;
@@ -79,7 +68,7 @@ namespace SoruHavuzuOtomasyonu
             this.labelSoyad.BackColor = System.Drawing.Color.Transparent;
             this.labelSoyad.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelSoyad.ForeColor = System.Drawing.Color.White;
-            this.labelSoyad.Location = new System.Drawing.Point(59, 251);
+            this.labelSoyad.Location = new System.Drawing.Point(46, 201);
             this.labelSoyad.Name = "labelSoyad";
             this.labelSoyad.Size = new System.Drawing.Size(252, 42);
             this.labelSoyad.TabIndex = 2;
@@ -91,7 +80,7 @@ namespace SoruHavuzuOtomasyonu
             this.labelKulAd.BackColor = System.Drawing.Color.Transparent;
             this.labelKulAd.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelKulAd.ForeColor = System.Drawing.Color.White;
-            this.labelKulAd.Location = new System.Drawing.Point(59, 313);
+            this.labelKulAd.Location = new System.Drawing.Point(46, 263);
             this.labelKulAd.Name = "labelKulAd";
             this.labelKulAd.Size = new System.Drawing.Size(252, 42);
             this.labelKulAd.TabIndex = 3;
@@ -103,7 +92,7 @@ namespace SoruHavuzuOtomasyonu
             this.labelMail.BackColor = System.Drawing.Color.Transparent;
             this.labelMail.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelMail.ForeColor = System.Drawing.Color.White;
-            this.labelMail.Location = new System.Drawing.Point(59, 379);
+            this.labelMail.Location = new System.Drawing.Point(46, 329);
             this.labelMail.Name = "labelMail";
             this.labelMail.Size = new System.Drawing.Size(252, 42);
             this.labelMail.TabIndex = 4;
@@ -115,26 +104,17 @@ namespace SoruHavuzuOtomasyonu
             this.labelSifre.BackColor = System.Drawing.Color.Transparent;
             this.labelSifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelSifre.ForeColor = System.Drawing.Color.White;
-            this.labelSifre.Location = new System.Drawing.Point(59, 443);
+            this.labelSifre.Location = new System.Drawing.Point(46, 393);
             this.labelSifre.Name = "labelSifre";
             this.labelSifre.Size = new System.Drawing.Size(252, 42);
             this.labelSifre.TabIndex = 5;
             this.labelSifre.Text = "Şifre:";
             this.labelSifre.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // comboBoxTip
-            // 
-            this.comboBoxTip.FormattingEnabled = true;
-            this.comboBoxTip.Items.AddRange(new object[] {
-            "Öğrenci"});
-            this.comboBoxTip.Location = new System.Drawing.Point(337, 139);
-            this.comboBoxTip.Name = "comboBoxTip";
-            this.comboBoxTip.Size = new System.Drawing.Size(121, 24);
-            this.comboBoxTip.TabIndex = 6;
-            // 
             // textBoxAd
             // 
-            this.textBoxAd.Location = new System.Drawing.Point(337, 187);
+            this.textBoxAd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBoxAd.Location = new System.Drawing.Point(324, 137);
             this.textBoxAd.Multiline = true;
             this.textBoxAd.Name = "textBoxAd";
             this.textBoxAd.Size = new System.Drawing.Size(197, 39);
@@ -142,7 +122,8 @@ namespace SoruHavuzuOtomasyonu
             // 
             // textBoxSoyad
             // 
-            this.textBoxSoyad.Location = new System.Drawing.Point(337, 251);
+            this.textBoxSoyad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBoxSoyad.Location = new System.Drawing.Point(324, 201);
             this.textBoxSoyad.Multiline = true;
             this.textBoxSoyad.Name = "textBoxSoyad";
             this.textBoxSoyad.Size = new System.Drawing.Size(197, 39);
@@ -150,7 +131,8 @@ namespace SoruHavuzuOtomasyonu
             // 
             // textBoxKulAd
             // 
-            this.textBoxKulAd.Location = new System.Drawing.Point(337, 313);
+            this.textBoxKulAd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBoxKulAd.Location = new System.Drawing.Point(324, 263);
             this.textBoxKulAd.Multiline = true;
             this.textBoxKulAd.Name = "textBoxKulAd";
             this.textBoxKulAd.Size = new System.Drawing.Size(197, 39);
@@ -158,15 +140,18 @@ namespace SoruHavuzuOtomasyonu
             // 
             // textBoxMail
             // 
-            this.textBoxMail.Location = new System.Drawing.Point(337, 379);
+            this.textBoxMail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBoxMail.Location = new System.Drawing.Point(324, 329);
             this.textBoxMail.Multiline = true;
             this.textBoxMail.Name = "textBoxMail";
             this.textBoxMail.Size = new System.Drawing.Size(197, 39);
             this.textBoxMail.TabIndex = 10;
+            this.textBoxMail.Leave += new System.EventHandler(this.textBoxMail_Leave);
             // 
             // textBoxSifre
             // 
-            this.textBoxSifre.Location = new System.Drawing.Point(337, 443);
+            this.textBoxSifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBoxSifre.Location = new System.Drawing.Point(324, 393);
             this.textBoxSifre.Multiline = true;
             this.textBoxSifre.Name = "textBoxSifre";
             this.textBoxSifre.PasswordChar = '*';
@@ -188,7 +173,7 @@ namespace SoruHavuzuOtomasyonu
             // 
             this.buttonUyeOl.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonUyeOl.BackgroundImage")));
             this.buttonUyeOl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonUyeOl.Location = new System.Drawing.Point(337, 509);
+            this.buttonUyeOl.Location = new System.Drawing.Point(324, 459);
             this.buttonUyeOl.Name = "buttonUyeOl";
             this.buttonUyeOl.Size = new System.Drawing.Size(186, 55);
             this.buttonUyeOl.TabIndex = 13;
@@ -219,6 +204,7 @@ namespace SoruHavuzuOtomasyonu
             this.buttonCikis.TabIndex = 36;
             this.buttonCikis.Text = "X";
             this.buttonCikis.UseVisualStyleBackColor = false;
+            this.buttonCikis.Click += new System.EventHandler(this.buttonCikis_Click);
             // 
             // checkBoxGoster
             // 
@@ -226,7 +212,7 @@ namespace SoruHavuzuOtomasyonu
             this.checkBoxGoster.BackColor = System.Drawing.Color.Transparent;
             this.checkBoxGoster.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.checkBoxGoster.ForeColor = System.Drawing.Color.White;
-            this.checkBoxGoster.Location = new System.Drawing.Point(562, 443);
+            this.checkBoxGoster.Location = new System.Drawing.Point(552, 399);
             this.checkBoxGoster.Name = "checkBoxGoster";
             this.checkBoxGoster.Size = new System.Drawing.Size(107, 33);
             this.checkBoxGoster.TabIndex = 37;
@@ -239,12 +225,16 @@ namespace SoruHavuzuOtomasyonu
             this.labelUyeOl.BackColor = System.Drawing.Color.Transparent;
             this.labelUyeOl.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelUyeOl.ForeColor = System.Drawing.Color.White;
-            this.labelUyeOl.Location = new System.Drawing.Point(23, 27);
+            this.labelUyeOl.Location = new System.Drawing.Point(237, 39);
             this.labelUyeOl.Name = "labelUyeOl";
-            this.labelUyeOl.Size = new System.Drawing.Size(669, 71);
+            this.labelUyeOl.Size = new System.Drawing.Size(273, 71);
             this.labelUyeOl.TabIndex = 38;
             this.labelUyeOl.Text = "ÜYE OL";
             this.labelUyeOl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // UyeOl
             // 
@@ -264,30 +254,26 @@ namespace SoruHavuzuOtomasyonu
             this.Controls.Add(this.textBoxKulAd);
             this.Controls.Add(this.textBoxSoyad);
             this.Controls.Add(this.textBoxAd);
-            this.Controls.Add(this.comboBoxTip);
             this.Controls.Add(this.labelSifre);
             this.Controls.Add(this.labelMail);
             this.Controls.Add(this.labelKulAd);
             this.Controls.Add(this.labelSoyad);
             this.Controls.Add(this.labelAd);
-            this.Controls.Add(this.labelTip);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "UyeOl";
             this.Text = "UyeOl";
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label labelTip;
         private System.Windows.Forms.Label labelAd;
         private System.Windows.Forms.Label labelSoyad;
         private System.Windows.Forms.Label labelKulAd;
         private System.Windows.Forms.Label labelMail;
         private System.Windows.Forms.Label labelSifre;
-        private System.Windows.Forms.ComboBox comboBoxTip;
         private System.Windows.Forms.TextBox textBoxAd;
         private System.Windows.Forms.TextBox textBoxSoyad;
         private System.Windows.Forms.TextBox textBoxKulAd;
@@ -299,5 +285,6 @@ namespace SoruHavuzuOtomasyonu
         private System.Windows.Forms.Button buttonCikis;
         private System.Windows.Forms.CheckBox checkBoxGoster;
         private System.Windows.Forms.Label labelUyeOl;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

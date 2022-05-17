@@ -56,6 +56,7 @@ namespace SoruHavuzuOtomasyonu
             linkLabel1.TabStop = true;
             linkLabel1.Text = "Şifremi Unuttum";
             linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // buttonCikis
             // 

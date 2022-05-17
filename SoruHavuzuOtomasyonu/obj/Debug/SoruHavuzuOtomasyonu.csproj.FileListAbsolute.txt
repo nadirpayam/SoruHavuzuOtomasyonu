@@ -34,3 +34,8 @@ C:\Users\NADİR PAYAM\Source\Repos\SoruHavuzuOtomasyonu\SoruHavuzuOtomasyonu\obj
 C:\Users\lenovo\Desktop\SoruHavuzuOtomasyonu\SoruHavuzuOtomasyonu\obj\Debug\SoruHavuzuOtomasyonu.AdminKontrol.resources
 C:\Users\lenovo\Desktop\SoruHavuzuOtomasyonu\SoruHavuzuOtomasyonu\obj\Debug\SoruHavuzuOtomasyonu.OgrenciAnaSayfa.resources
 C:\Users\lenovo\Desktop\SoruHavuzuOtomasyonu\SoruHavuzuOtomasyonu\obj\Debug\SoruHavuzuOtomasyonu.QuizEkrani.resources
+C:\Users\NADİR PAYAM\Source\Repos\SoruHavuzuOtomasyonu\SoruHavuzuOtomasyonu\obj\Debug\SoruHavuzuOtomasyonu.OgrenciAnaSayfa.resources
+C:\Users\NADİR PAYAM\Source\Repos\SoruHavuzuOtomasyonu\SoruHavuzuOtomasyonu\obj\Debug\SoruHavuzuOtomasyonu.QuizEkrani.resources
+C:\Users\NADİR PAYAM\Source\Repos\SoruHavuzuOtomasyonu\SoruHavuzuOtomasyonu\obj\Debug\SoruHavuzuOtomasyonu.GunDegistirme.resources
+C:\Users\NADİR PAYAM\Source\Repos\SoruHavuzuOtomasyonu\SoruHavuzuOtomasyonu\obj\Debug\SoruHavuzuOtomasyonu.AnalizYap.resources
+C:\Users\NADİR PAYAM\Source\Repos\SoruHavuzuOtomasyonu\SoruHavuzuOtomasyonu\obj\Debug\SoruHavuzuOtomasyonu.EksikQuizi.resources

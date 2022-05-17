@@ -22,20 +22,23 @@ namespace SoruHavuzuOtomasyonu
           
         }
 
+        //burada veritabanı bağlantısı için Classlar klasöründen SqlBaglantis sınıfının nesnesini oluşturuyoruz
         Classlar.SqlBaglantisi sql = new Classlar.SqlBaglantisi();
         
 
         private void button1_Click(object sender, EventArgs e)
         {
+            // burada kullanıcının verilen bilgileri eksik girip girmediği kontrol ediliyor
             if (textBoxAd.Text == "" || textBoxSoyad.Text == ""  || textBoxKulAd.Text == ""  || textBoxMail.Text == "" || textBoxSifre.Text == "")
             {
                 MessageBox.Show("Lütfen tüm alanları doldurun");
             }
             else
             {
-                string sorgu = "insert into Kullanicilar(KullaniciTipId,KullaniciAd,Ad,Soyad,Mail,Sifre)values(@kulId,@kulad,@ad,@soyad,@mail,@sifre)";
+                // eğer tüm bilgileri girmişse bu bilgiler veritabanına kaydediliyor
+                string sorgu = "insert into Kullanicilar(KullaniciAd,Ad,Soyad,Mail,Sifre)values(@kulad,@ad,@soyad,@mail,@sifre)";
                 SqlCommand komut = new SqlCommand(sorgu, sql.baglan());
-                komut.Parameters.AddWithValue("@kulId", 3);
+                
                 komut.Parameters.AddWithValue("@kulad", textBoxKulAd.Text);
                 komut.Parameters.AddWithValue("@ad", textBoxAd.Text);
                 komut.Parameters.AddWithValue("@soyad", textBoxSoyad.Text);
@@ -46,7 +49,7 @@ namespace SoruHavuzuOtomasyonu
             }
 
         }
-
+        // burada kullanıcının şifresini girerken şifresinin görünürlüğünü kontrol etmesini sağlıyoruz
         private void checkBoxGoster_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBoxGoster.CheckState == CheckState.Checked)
@@ -62,6 +65,7 @@ namespace SoruHavuzuOtomasyonu
             }
         }
 
+        //burada kullanıcı anasayfaya dönmek isterse butona bastığında dönmesini sağlıyoruz
         private void buttonAnasayfa_Click(object sender, EventArgs e)
         {
             Anasayfa anasayfa = new Anasayfa();
@@ -69,12 +73,34 @@ namespace SoruHavuzuOtomasyonu
             this.Hide();
         }
 
+        //burada eğer kullanıcı kaydolmuşssa direkt giriş ekranına geçmesini sağlıyoruz
         private void buttonGirisYap_Click(object sender, EventArgs e)
         {
             OgrenciGiris giris = new OgrenciGiris();
             giris.Show();
             this.Hide();
         }
+
+        //burada kullanıcının uygulamadan çıkmasını sağlıyoruz
+        private void buttonCikis_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void textBoxMail_Leave(object sender, EventArgs e)
+        {
+            
+                string pattern = "^([0-9a-zA-Z]([-\\.\\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\\w]*[0-9a-zA-Z]\\.)+[a-zA-Z]{2,9})$";
+                if (Regex.IsMatch(textBoxMail.Text, pattern))
+                {
+                    errorProvider1.Clear();
+                }
+                else
+                {
+                    errorProvider1.SetError(this.textBoxMail, "Lutfen calisan mail adresi girin");
+                    return;
+                }
+            }
     }
 }
 

@@ -58,12 +58,32 @@
     <Compile Include="AdminKontrol.Designer.cs">
       <DependentUpon>AdminKontrol.cs</DependentUpon>
     </Compile>
+    <Compile Include="AnalizYap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnalizYap.Designer.cs">
+      <DependentUpon>AnalizYap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classlar\KullaniciBilgileri.cs" />
+    <Compile Include="Classlar\SoruBilgileri.cs" />
     <Compile Include="Classlar\SqlBaglantisi.cs" />
+    <Compile Include="EksikQuizi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EksikQuizi.Designer.cs">
+      <DependentUpon>EksikQuizi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GunDegistirme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GunDegistirme.Designer.cs">
+      <DependentUpon>GunDegistirme.cs</DependentUpon>
     </Compile>
     <Compile Include="OgrenciAnaSayfa.cs">
       <SubType>Form</SubType>
@@ -115,8 +135,17 @@
     <EmbeddedResource Include="AdminKontrol.resx">
       <DependentUpon>AdminKontrol.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AnalizYap.resx">
+      <DependentUpon>AnalizYap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EksikQuizi.resx">
+      <DependentUpon>EksikQuizi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GunDegistirme.resx">
+      <DependentUpon>GunDegistirme.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OgrenciAnaSayfa.resx">
       <DependentUpon>OgrenciAnaSayfa.cs</DependentUpon>

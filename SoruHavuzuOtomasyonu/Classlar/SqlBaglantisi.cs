@@ -12,7 +12,7 @@ namespace SoruHavuzuOtomasyonu.Classlar
     {
         public SqlConnection baglan()
         {
-            SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-BUB2ROC;Initial Catalog=SinavProjesi;Integrated Security=True");
+            SqlConnection baglanti = new SqlConnection(@"Data Source=LAPTOP-LNMPQIK9;Initial Catalog=SinavProjesi;Integrated Security=True");
             baglanti.Open();
             return baglanti;
         }

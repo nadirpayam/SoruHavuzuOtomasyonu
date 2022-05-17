@@ -77,7 +77,7 @@ namespace SoruHavuzuOtomasyonu
             this.dataGridViewSorular.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewSorular.Size = new System.Drawing.Size(936, 341);
             this.dataGridViewSorular.TabIndex = 13;
-            this.dataGridViewSorular.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewSorular_CellContentClick);
+            
             this.dataGridViewSorular.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewSorular_CellDoubleClick);
             // 
             // SoruID
