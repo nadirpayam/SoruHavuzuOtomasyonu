@@ -46,8 +46,8 @@ namespace SoruHavuzuOtomasyonu
        "  OR(C.Sigma = 2 AND DATEDIFF(day, SoruTarihi, getdate()) = (select D.Aralik from SureDegistirme D where D.SigmaSayisi = 2)) " +
          " OR(C.Sigma = 3 AND DATEDIFF(day, SoruTarihi, getdate()) = (select D.Aralik from SureDegistirme D where D.SigmaSayisi = 3)) " +
      "	OR(C.Sigma = 4 AND DATEDIFF(day, SoruTarihi, getdate()) = (select D.Aralik from SureDegistirme D where D.SigmaSayisi = 4)) " +
-     "	OR(C.Sigma = 5 AND DATEDIFF(day, SoruTarihi, getdate()) = (select D.Aralik from SureDegistirme D where D.SigmaSayisi = 5)) " +
-     "    OR(C.Sigma = 6 AND DATEDIFF(day, SoruTarihi, getdate()) = (select D.Aralik from SureDegistirme D where D.SigmaSayisi = 6))) as a";
+    "    OR(C.Sigma = 5 AND DATEDIFF(day, SoruTarihi, getdate()) = (select D.Aralik from SureDegistirme D where D.SigmaSayisi = 5))) as a"; // en son 5 sigmalı soru geliyor çünkü sigması 6 olan soru demek  6 kez üst
+            // üste doğru cevaplanmış demek yani bir daha sorulmasına gerek yok
        
                     DataTable tbl = new DataTable();
                     SqlDataAdapter adtr = new SqlDataAdapter(sorgulamak, sql.baglan());
@@ -68,31 +68,32 @@ namespace SoruHavuzuOtomasyonu
 
             labelSorusayısı.Text = dataGridViewSorular.RowCount.ToString();
             timer1.Interval = 1000; 
-            timer1.Enabled = true;        
-        }
-      
+            timer1.Enabled = true;
 
-        
-        
+            
+        }
+
+        int zaman = 10; // sınavda göstermelik olsun diye 10 saniyeden geri başlatıcam ki sisteminde çalıştığını test edelim
+      
+       // int zaman = Convert.ToInt32(labelSorusayısı.Text) * 60 yani soru başına 60 saniye süre veriyoruz
         private void timer1_Tick(object sender, EventArgs e)
         {
-            int zaman = Convert.ToInt32(labelSorusayısı.Text) * 60;
-
-            if (zaman>0)
+            
+           if (zaman>0)
             {
-                timer1.Interval = 1000; 
+               timer1.Interval = 1000; 
                 timer1.Enabled = true;
-                int sayac = zaman--;
-                labelSure.Text = sayac.ToString();
-            }
-            else if(zaman==0)
+              int sayac = zaman--;
+              labelSure.Text = sayac.ToString();
+           }
+            else if(zaman == 0)
             {
                 timer1.Enabled = false;
                 MessageBox.Show("Süreniz dolmuştur, cevaplarınız kaydedildi.");
                 OgrenciAnaSayfa anasayfa = new OgrenciAnaSayfa();
                 anasayfa.Show();
-                this.Hide();
-            }
+              this.Hide();
+          }
         }
 
       // soruları resim olarak getiriyor, veritabanında binary olarak kaydetmiştik burda gerekli dönüşümü yapıyoruz
@@ -184,7 +185,7 @@ namespace SoruHavuzuOtomasyonu
             {
                
                 string sorgu5 = "update  OgrenciCevap SET Sigma = 0,KacKezSoruldu+=1, YanlisSayisi+=1  where SoruID = '" + Convert.ToInt32(dataGridViewSorular.CurrentRow.Cells["SoruID"].Value) + "'";
-                string sorgu7 = "update  Sorular SET Sigma = 0 where SoruID = '" + Convert.ToInt32(dataGridViewSorular.CurrentRow.Cells["SoruID"].Value) + "'";
+                string sorgu7 = "update  Sorular SET Sigma = 0 where SoruID = '" + Convert.ToInt32(dataGridViewSorular.CurrentRow.Cells["SoruID"].Value) + "'"; // eğer soru yanlış bilinmişse sigması 0 oluyor çünkü soru üst üste doğru bilinmesi gerekiyor
                 SqlCommand komutuu = new SqlCommand(sorgu5,sql.baglan());
                 SqlCommand komutuun = new SqlCommand(sorgu7, sql.baglan());
                 komutuu.ExecuteNonQuery();
