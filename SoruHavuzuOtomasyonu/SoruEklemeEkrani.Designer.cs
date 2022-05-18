@@ -279,7 +279,7 @@ namespace SoruHavuzuOtomasyonu
             this.buttonCikis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCikis.Font = new System.Drawing.Font("Constantia", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.buttonCikis.ForeColor = System.Drawing.Color.Maroon;
-            this.buttonCikis.Location = new System.Drawing.Point(1097, 80);
+            this.buttonCikis.Location = new System.Drawing.Point(1099, 68);
             this.buttonCikis.Name = "buttonCikis";
             this.buttonCikis.Size = new System.Drawing.Size(85, 76);
             this.buttonCikis.TabIndex = 84;
