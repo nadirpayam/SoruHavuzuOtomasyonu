@@ -55,6 +55,10 @@ namespace SoruHavuzuOtomasyonu
             this.textBoxSigma2 = new System.Windows.Forms.TextBox();
             this.textBoxCevap = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.labelSorusayısı = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.labelcozsayisi = new System.Windows.Forms.Label();
+            this.labelsorusayisii = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxsoru)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSorular)).BeginInit();
             this.SuspendLayout();
@@ -65,7 +69,7 @@ namespace SoruHavuzuOtomasyonu
             this.labelSure.BackColor = System.Drawing.Color.Transparent;
             this.labelSure.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelSure.ForeColor = System.Drawing.Color.White;
-            this.labelSure.Location = new System.Drawing.Point(309, 113);
+            this.labelSure.Location = new System.Drawing.Point(292, 113);
             this.labelSure.Name = "labelSure";
             this.labelSure.Size = new System.Drawing.Size(80, 37);
             this.labelSure.TabIndex = 41;
@@ -75,7 +79,7 @@ namespace SoruHavuzuOtomasyonu
             // 
             this.buttonBaslat.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonBaslat.BackgroundImage")));
             this.buttonBaslat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonBaslat.Location = new System.Drawing.Point(90, 106);
+            this.buttonBaslat.Location = new System.Drawing.Point(75, 90);
             this.buttonBaslat.Name = "buttonBaslat";
             this.buttonBaslat.Size = new System.Drawing.Size(194, 60);
             this.buttonBaslat.TabIndex = 40;
@@ -85,24 +89,26 @@ namespace SoruHavuzuOtomasyonu
             // labelAdi
             // 
             this.labelAdi.BackColor = System.Drawing.Color.Transparent;
-            this.labelAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelAdi.ForeColor = System.Drawing.Color.White;
-            this.labelAdi.Location = new System.Drawing.Point(609, 113);
+            this.labelAdi.Location = new System.Drawing.Point(598, 82);
             this.labelAdi.Name = "labelAdi";
-            this.labelAdi.Size = new System.Drawing.Size(100, 19);
+            this.labelAdi.Size = new System.Drawing.Size(136, 41);
             this.labelAdi.TabIndex = 43;
-            this.labelAdi.Text = "Öğrenci Adı";
+            this.labelAdi.Text = "Öğrenci:";
+            this.labelAdi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // labelSinavTarihi
             // 
             this.labelSinavTarihi.AutoSize = true;
             this.labelSinavTarihi.BackColor = System.Drawing.Color.Transparent;
+            this.labelSinavTarihi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelSinavTarihi.ForeColor = System.Drawing.Color.White;
-            this.labelSinavTarihi.Location = new System.Drawing.Point(759, 108);
+            this.labelSinavTarihi.Location = new System.Drawing.Point(599, 131);
             this.labelSinavTarihi.Name = "labelSinavTarihi";
-            this.labelSinavTarihi.Size = new System.Drawing.Size(83, 17);
+            this.labelSinavTarihi.Size = new System.Drawing.Size(135, 25);
             this.labelSinavTarihi.TabIndex = 44;
-            this.labelSinavTarihi.Text = "Sınav Tarihi";
+            this.labelSinavTarihi.Text = "Sınav Tarihi:";
             // 
             // buttonCikis
             // 
@@ -113,7 +119,7 @@ namespace SoruHavuzuOtomasyonu
             this.buttonCikis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCikis.Font = new System.Drawing.Font("Constantia", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.buttonCikis.ForeColor = System.Drawing.Color.Maroon;
-            this.buttonCikis.Location = new System.Drawing.Point(90, 635);
+            this.buttonCikis.Location = new System.Drawing.Point(106, 679);
             this.buttonCikis.Name = "buttonCikis";
             this.buttonCikis.Size = new System.Drawing.Size(194, 52);
             this.buttonCikis.TabIndex = 50;
@@ -124,7 +130,7 @@ namespace SoruHavuzuOtomasyonu
             // 
             this.radioButtonA.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.radioButtonA.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.radioButtonA.Location = new System.Drawing.Point(439, 647);
+            this.radioButtonA.Location = new System.Drawing.Point(428, 669);
             this.radioButtonA.Name = "radioButtonA";
             this.radioButtonA.Size = new System.Drawing.Size(50, 40);
             this.radioButtonA.TabIndex = 51;
@@ -137,7 +143,7 @@ namespace SoruHavuzuOtomasyonu
             // 
             this.radioButtonB.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.radioButtonB.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.radioButtonB.Location = new System.Drawing.Point(524, 647);
+            this.radioButtonB.Location = new System.Drawing.Point(513, 669);
             this.radioButtonB.Name = "radioButtonB";
             this.radioButtonB.Size = new System.Drawing.Size(50, 40);
             this.radioButtonB.TabIndex = 52;
@@ -150,7 +156,7 @@ namespace SoruHavuzuOtomasyonu
             // 
             this.radioButtonC.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.radioButtonC.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.radioButtonC.Location = new System.Drawing.Point(599, 647);
+            this.radioButtonC.Location = new System.Drawing.Point(588, 669);
             this.radioButtonC.Name = "radioButtonC";
             this.radioButtonC.Size = new System.Drawing.Size(50, 40);
             this.radioButtonC.TabIndex = 53;
@@ -163,7 +169,7 @@ namespace SoruHavuzuOtomasyonu
             // 
             this.radioButtonD.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.radioButtonD.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.radioButtonD.Location = new System.Drawing.Point(685, 647);
+            this.radioButtonD.Location = new System.Drawing.Point(674, 669);
             this.radioButtonD.Name = "radioButtonD";
             this.radioButtonD.Size = new System.Drawing.Size(50, 40);
             this.radioButtonD.TabIndex = 54;
@@ -174,7 +180,7 @@ namespace SoruHavuzuOtomasyonu
             // 
             // pictureBoxsoru
             // 
-            this.pictureBoxsoru.Location = new System.Drawing.Point(316, 183);
+            this.pictureBoxsoru.Location = new System.Drawing.Point(316, 210);
             this.pictureBoxsoru.Name = "pictureBoxsoru";
             this.pictureBoxsoru.Size = new System.Drawing.Size(654, 436);
             this.pictureBoxsoru.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -191,7 +197,7 @@ namespace SoruHavuzuOtomasyonu
             this.SoruID,
             this.SoruTarihi,
             this.Soru});
-            this.dataGridViewSorular.Location = new System.Drawing.Point(85, 223);
+            this.dataGridViewSorular.Location = new System.Drawing.Point(75, 250);
             this.dataGridViewSorular.Name = "dataGridViewSorular";
             this.dataGridViewSorular.ReadOnly = true;
             this.dataGridViewSorular.RowHeadersWidth = 51;
@@ -229,7 +235,7 @@ namespace SoruHavuzuOtomasyonu
             // 
             // textBoxAd
             // 
-            this.textBoxAd.Location = new System.Drawing.Point(603, 142);
+            this.textBoxAd.Location = new System.Drawing.Point(740, 94);
             this.textBoxAd.Multiline = true;
             this.textBoxAd.Name = "textBoxAd";
             this.textBoxAd.Size = new System.Drawing.Size(106, 24);
@@ -239,7 +245,7 @@ namespace SoruHavuzuOtomasyonu
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(751, 140);
+            this.dateTimePicker1.Location = new System.Drawing.Point(740, 133);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(106, 22);
             this.dateTimePicker1.TabIndex = 69;
@@ -253,9 +259,9 @@ namespace SoruHavuzuOtomasyonu
             this.labelkalansaniye.BackColor = System.Drawing.Color.Transparent;
             this.labelkalansaniye.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelkalansaniye.ForeColor = System.Drawing.Color.White;
-            this.labelkalansaniye.Location = new System.Drawing.Point(395, 126);
+            this.labelkalansaniye.Location = new System.Drawing.Point(378, 127);
             this.labelkalansaniye.Name = "labelkalansaniye";
-            this.labelkalansaniye.Size = new System.Drawing.Size(100, 23);
+            this.labelkalansaniye.Size = new System.Drawing.Size(120, 23);
             this.labelkalansaniye.TabIndex = 70;
             this.labelkalansaniye.Text = "Saniye Kaldı";
             // 
@@ -263,7 +269,7 @@ namespace SoruHavuzuOtomasyonu
             // 
             this.buttonGönder.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonGönder.BackgroundImage")));
             this.buttonGönder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonGönder.Location = new System.Drawing.Point(810, 647);
+            this.buttonGönder.Location = new System.Drawing.Point(810, 658);
             this.buttonGönder.Name = "buttonGönder";
             this.buttonGönder.Size = new System.Drawing.Size(160, 51);
             this.buttonGönder.TabIndex = 71;
@@ -275,7 +281,7 @@ namespace SoruHavuzuOtomasyonu
             this.labelSorular.BackColor = System.Drawing.Color.Transparent;
             this.labelSorular.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelSorular.ForeColor = System.Drawing.Color.White;
-            this.labelSorular.Location = new System.Drawing.Point(95, 177);
+            this.labelSorular.Location = new System.Drawing.Point(102, 204);
             this.labelSorular.Name = "labelSorular";
             this.labelSorular.Size = new System.Drawing.Size(168, 43);
             this.labelSorular.TabIndex = 73;
@@ -284,7 +290,7 @@ namespace SoruHavuzuOtomasyonu
             // 
             // textBoxSigma
             // 
-            this.textBoxSigma.Location = new System.Drawing.Point(613, 706);
+            this.textBoxSigma.Location = new System.Drawing.Point(618, 740);
             this.textBoxSigma.Multiline = true;
             this.textBoxSigma.Name = "textBoxSigma";
             this.textBoxSigma.Size = new System.Drawing.Size(106, 24);
@@ -294,7 +300,7 @@ namespace SoruHavuzuOtomasyonu
             // 
             // textBoxSigma2
             // 
-            this.textBoxSigma2.Location = new System.Drawing.Point(501, 706);
+            this.textBoxSigma2.Location = new System.Drawing.Point(506, 740);
             this.textBoxSigma2.Multiline = true;
             this.textBoxSigma2.Name = "textBoxSigma2";
             this.textBoxSigma2.Size = new System.Drawing.Size(106, 24);
@@ -304,7 +310,7 @@ namespace SoruHavuzuOtomasyonu
             // 
             // textBoxCevap
             // 
-            this.textBoxCevap.Location = new System.Drawing.Point(389, 706);
+            this.textBoxCevap.Location = new System.Drawing.Point(394, 740);
             this.textBoxCevap.Multiline = true;
             this.textBoxCevap.Name = "textBoxCevap";
             this.textBoxCevap.Size = new System.Drawing.Size(106, 24);
@@ -327,13 +333,62 @@ namespace SoruHavuzuOtomasyonu
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // labelSorusayısı
+            // 
+            this.labelSorusayısı.AutoSize = true;
+            this.labelSorusayısı.BackColor = System.Drawing.Color.Transparent;
+            this.labelSorusayısı.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelSorusayısı.ForeColor = System.Drawing.Color.White;
+            this.labelSorusayısı.Location = new System.Drawing.Point(82, 171);
+            this.labelSorusayısı.Name = "labelSorusayısı";
+            this.labelSorusayısı.Size = new System.Drawing.Size(0, 25);
+            this.labelSorusayısı.TabIndex = 78;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(135, 171);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(120, 23);
+            this.label1.TabIndex = 79;
+            this.label1.Text = "tane soru var";
+            // 
+            // labelcozsayisi
+            // 
+            this.labelcozsayisi.BackColor = System.Drawing.Color.Transparent;
+            this.labelcozsayisi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelcozsayisi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.labelcozsayisi.Location = new System.Drawing.Point(814, 733);
+            this.labelcozsayisi.Name = "labelcozsayisi";
+            this.labelcozsayisi.Size = new System.Drawing.Size(156, 31);
+            this.labelcozsayisi.TabIndex = 81;
+            this.labelcozsayisi.Text = "Soru Çözüldü";
+            // 
+            // labelsorusayisii
+            // 
+            this.labelsorusayisii.BackColor = System.Drawing.Color.Transparent;
+            this.labelsorusayisii.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelsorusayisii.ForeColor = System.Drawing.Color.White;
+            this.labelsorusayisii.Location = new System.Drawing.Point(757, 733);
+            this.labelsorusayisii.Name = "labelsorusayisii";
+            this.labelsorusayisii.Size = new System.Drawing.Size(47, 31);
+            this.labelsorusayisii.TabIndex = 80;
+            this.labelsorusayisii.Text = "0";
+            this.labelsorusayisii.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // QuizEkrani
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1026, 819);
+            this.ClientSize = new System.Drawing.Size(1026, 873);
+            this.Controls.Add(this.labelcozsayisi);
+            this.Controls.Add(this.labelsorusayisii);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelSorusayısı);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBoxCevap);
             this.Controls.Add(this.textBoxSigma2);
@@ -391,5 +446,9 @@ namespace SoruHavuzuOtomasyonu
         private System.Windows.Forms.DataGridViewTextBoxColumn SoruTarihi;
         private System.Windows.Forms.DataGridViewTextBoxColumn Soru;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label labelSorusayısı;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelcozsayisi;
+        private System.Windows.Forms.Label labelsorusayisii;
     }
 }

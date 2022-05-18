@@ -22,6 +22,7 @@ namespace SoruHavuzuOtomasyonu
         //burada sınavı bitirip geri anasayfaya dönmüş oluyoruz
         private void buttonCikis_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Cevaplarınız kaydedildi.");
             OgrenciAnaSayfa anasayfa = new OgrenciAnaSayfa();
             anasayfa.Show();
             this.Hide();
@@ -32,16 +33,22 @@ namespace SoruHavuzuOtomasyonu
         Classlar.SqlBaglantisi sql = new Classlar.SqlBaglantisi(); // veritabanı bağlantısını sağlıyoruz
 
         //veritabanından sınav sorularını getiriyoruz
+
+        // 
         void SorulariGetir()
         {
-            string sorgulamak = "select * from(Select C.SoruID as 'SoruID' from OgrenciCevap C  where C.KullaniciID ='" + Classlar.KullaniciBilgileri.KullaniciID + "'" +
-        " AND C.Sigma = 1 AND DATEDIFF(day, SoruTarihi, getdate()) = (select D.Aralik from SureDegistirme D where D.SigmaSayisi = 1) " +
+            // 6 SİGMA ALGORİTMASI BURADA YAPILMIŞTIR
+            string sorgulamak =// alt satırda daha önce hiç doğru bilinmemiş  yani sigması 0 olan 10 tane random şeklinde soru geliyor
+                " select* from(Select top 10 S.SoruID as 'SoruID' from Sorular S, OgrenciCevap OC where S.SoruID != OC.SoruID order by NEWID()) as b union all "+
+                // aşağıda ise sigma sayısına bağlı olarak süresi gelmiş sorular geliyor
+            "select * from(Select C.SoruID as 'SoruID' from OgrenciCevap C  where C.KullaniciID ='" + Classlar.KullaniciBilgileri.KullaniciID + "'" +
+        " AND C.Sigma = 1 AND DATEDIFF(day, SoruTarihi, getdate()) = (select D.Aralik from SureDegistirme D where D.SigmaSayisi = 1) " + // sigması 1 olan sorunun gelmesi için kullanıcının belirlediği süre tarihi gelmiş mi? geldiyse sigması 1 olan sorularda gelsin sınava
        "  OR(C.Sigma = 2 AND DATEDIFF(day, SoruTarihi, getdate()) = (select D.Aralik from SureDegistirme D where D.SigmaSayisi = 2)) " +
          " OR(C.Sigma = 3 AND DATEDIFF(day, SoruTarihi, getdate()) = (select D.Aralik from SureDegistirme D where D.SigmaSayisi = 3)) " +
      "	OR(C.Sigma = 4 AND DATEDIFF(day, SoruTarihi, getdate()) = (select D.Aralik from SureDegistirme D where D.SigmaSayisi = 4)) " +
      "	OR(C.Sigma = 5 AND DATEDIFF(day, SoruTarihi, getdate()) = (select D.Aralik from SureDegistirme D where D.SigmaSayisi = 5)) " +
-     "    OR(C.Sigma = 6 AND DATEDIFF(day, SoruTarihi, getdate()) = (select D.Aralik from SureDegistirme D where D.SigmaSayisi = 6))) as a union all " +
-        " select* from(Select top 10 S.SoruID as 'SoruID' from Sorular S, OgrenciCevap OC where S.SoruID != OC.SoruID order by NEWID()) as b ";
+     "    OR(C.Sigma = 6 AND DATEDIFF(day, SoruTarihi, getdate()) = (select D.Aralik from SureDegistirme D where D.SigmaSayisi = 6))) as a";
+       
                     DataTable tbl = new DataTable();
                     SqlDataAdapter adtr = new SqlDataAdapter(sorgulamak, sql.baglan());
                     adtr.Fill(tbl);
@@ -49,33 +56,42 @@ namespace SoruHavuzuOtomasyonu
 }
         private void QuizEkrani_Load(object sender, EventArgs e)
         {
-           
-            SorulariGetir(); // ekran yüklendiğinde otomatikmen sorular da gelmiş oluyor
             textBoxAd.Text = Classlar.KullaniciBilgileri.Ad + " " +  Classlar.KullaniciBilgileri.Soyad ; // sınavı olan kişinin adı soyadı görünüyor
   }
-       
-        int zaman = 600;
+        
+    
+
         // burada sınavın süresini ayarlıyoruz
         private void buttonBaslat_Click_1(object sender, EventArgs e)
         {
+            SorulariGetir();
+
+            labelSorusayısı.Text = dataGridViewSorular.RowCount.ToString();
             timer1.Interval = 1000; 
             timer1.Enabled = true;        
         }
+      
+
+        
+        
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if(zaman>0)
+            int zaman = Convert.ToInt32(labelSorusayısı.Text) * 60;
+
+            if (zaman>0)
             {
-                timer1.Interval = 1000;
+                timer1.Interval = 1000; 
                 timer1.Enabled = true;
                 int sayac = zaman--;
                 labelSure.Text = sayac.ToString();
             }
             else if(zaman==0)
             {
-               
                 timer1.Enabled = false;
-                MessageBox.Show("Süreniz dolmuştur");
-
+                MessageBox.Show("Süreniz dolmuştur, cevaplarınız kaydedildi.");
+                OgrenciAnaSayfa anasayfa = new OgrenciAnaSayfa();
+                anasayfa.Show();
+                this.Hide();
             }
         }
 
@@ -183,10 +199,14 @@ namespace SoruHavuzuOtomasyonu
             radioButtonC.Checked = false;
             radioButtonD.Checked = false;
 
+            int a = Convert.ToInt32(labelsorusayisii.Text);
+            a += 1;
+            labelsorusayisii.Text = a.ToString();
+
 
         }
 
-     
+
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();

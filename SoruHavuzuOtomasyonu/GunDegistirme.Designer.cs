@@ -143,7 +143,7 @@ namespace SoruHavuzuOtomasyonu
             // 
             this.buttonOgrAnasayfa.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonOgrAnasayfa.BackgroundImage")));
             this.buttonOgrAnasayfa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonOgrAnasayfa.Location = new System.Drawing.Point(2, 445);
+            this.buttonOgrAnasayfa.Location = new System.Drawing.Point(3, 445);
             this.buttonOgrAnasayfa.Name = "buttonOgrAnasayfa";
             this.buttonOgrAnasayfa.Size = new System.Drawing.Size(82, 78);
             this.buttonOgrAnasayfa.TabIndex = 84;
